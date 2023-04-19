@@ -9,7 +9,6 @@ public class Actualizar {
     }
     public void actualizar(Registro registro) {
         Scanner scanner = new Scanner(System.in);
-        // si se encuentra el registro, se solicita al usuario que ingrese los nuevos datos
         System.out.println("Ingrese el nuevo nombre completo:");
         registro.setNombreCompleto(scanner.nextLine());
 

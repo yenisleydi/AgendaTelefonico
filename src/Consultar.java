@@ -7,12 +7,11 @@ public class Consultar {
     }
     public void consultar(){
         for(Registro registro:registros){
-            System.out.println("Nombre completo: " + registro.nombreCompleto);
-            System.out.println("Organizacion: " + registro.organizacion);
-            System.out.println("Correo electronico: " + registro.correo);
-            System.out.println("Numero de telefono: " + registro.numero);
+            System.out.println("Nombre completo: " + registro.getNombreCompleto());
+            System.out.println("Organizacion: " + registro.getOrganizacion());
+            System.out.println("Correo electronico: " + registro.getCorreo());
+            System.out.println("Numero de telefono: " + registro.getCorreo());
             System.out.println();
         }
-
     }
 }

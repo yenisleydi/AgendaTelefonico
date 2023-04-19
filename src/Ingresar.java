@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Ingresar {
+public class Ingresar{
   private ArrayList<Registro> registros;
     public Ingresar(ArrayList<Registro> registros) {
         this.registros = registros;
@@ -10,13 +10,13 @@ public class Ingresar {
         Scanner scanner = new Scanner(System.in);
         Registro usuario = new Registro();
         System.out.println("Ingresa el nombre completo");
-        usuario.nombreCompleto = scanner.nextLine();
+        usuario.setNombreCompleto(scanner.nextLine());
         System.out.println("Ingresa la organizacion");
-        usuario.organizacion = scanner.nextLine();
+        usuario.setOrganizacion(scanner.nextLine());
         System.out.println("Ingresa el correo electronico");
-        usuario.correo = scanner.nextLine();
+        usuario.setCorreo( scanner.nextLine());
         System.out.println("Ingresa el numero de telefono");
-        usuario.numero = scanner.nextInt();
+        usuario.setNumero(scanner.nextInt());
         registros.add(usuario);
     }
 }

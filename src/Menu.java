@@ -28,8 +28,6 @@ public class Menu {
                 case "Eliminar" ->
                     eliminar.eliminar();
                 default ->System.out.println("Opcion invalida");
-
-
             }
         }while(!elegir.equals("Salir"));
     }

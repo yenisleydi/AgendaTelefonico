@@ -1,10 +1,9 @@
 
 public class Registro {
-    String nombreCompleto;
-    String organizacion;
-    String correo;
-    int numero;
-
+     private String nombreCompleto;
+     private String organizacion;
+     private String correo;
+     private int numero;
 
     public String getNombreCompleto() {
         return nombreCompleto;
@@ -38,10 +37,6 @@ public class Registro {
         this.numero = numero;
     }
 
-    @Override
-    public String toString() {
-        return "Nombre completo:" + nombreCompleto + "Organizacion:" + organizacion + "Correo electronico:" + correo + "Numero de telefono:" + numero;
-    }
 }
 
 
